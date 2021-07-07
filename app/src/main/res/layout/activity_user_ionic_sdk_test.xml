@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".User_Ionic_Sdk_Test">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:text="POC TEST APP"/>
+
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <EditText
+            android:id="@+id/et_client_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="client_id"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="top"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:text="think_dev"/>
+
+        <EditText
+            android:id="@+id/et_api_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="api_key"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:text="think_dev"/>
+
+        <EditText
+            android:id="@+id/et_environment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="environment"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:text="uat"/>
+
+        <EditText
+            android:id="@+id/et_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="user_id"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:text="7710978566"/>
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="user_name"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:text="Shivam"/>
+
+        <EditText
+            android:id="@+id/et_user_fathername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="user_fathername"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:text=""/>
+
+        <EditText
+            android:id="@+id/et_user_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="user_dob"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:text="00/00/0000"/>
+
+        <EditText
+            android:id="@+id/et_user_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="group"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/edit_text_style"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        android:layout_gravity="bottom">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

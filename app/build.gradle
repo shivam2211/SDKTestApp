@@ -8,17 +8,19 @@ android {
 
     defaultConfig {
         applicationId "com.example.sdktestapp"
-        minSdkVersion 19
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -36,5 +38,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'com.android.support:multidex:1.0.3'
-    implementation 'in.thinkanalytics.kwikid:agentless:0.0.17'
+//    implementation 'in.thinkanalytics.kwikid:native_sdk:0.0.24'
+//    implementation 'in.thinkanalytics.kwikid:agentless:0.0.19'
+    implementation 'in.thinkanalytics.kwikid:user_sdk:9'
 }
